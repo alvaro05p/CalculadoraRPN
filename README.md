@@ -1,1 +1,1 @@
-[imagen](RPN.png)
+![imagen](RPN.png)
