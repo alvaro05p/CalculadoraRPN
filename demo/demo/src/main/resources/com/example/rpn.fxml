@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rpnController">
+   <children>
+      <Button fx:id="n8button" layoutX="366.0" layoutY="186.0" mnemonicParsing="false" onAction="#meter8" prefHeight="74.0" prefWidth="70.0" text="8" />
+      <Button fx:id="n9button" layoutX="436.0" layoutY="186.0" mnemonicParsing="false" onAction="#meter9" prefHeight="74.0" prefWidth="70.0" text="9" />
+      <Button fx:id="n7button" layoutX="296.0" layoutY="186.0" mnemonicParsing="false" onAction="#meter7" prefHeight="74.0" prefWidth="70.0" text="7" />
+      <Button fx:id="n5button" layoutX="366.0" layoutY="260.0" mnemonicParsing="false" onAction="#meter5" prefHeight="74.0" prefWidth="70.0" text="5" />
+      <Button fx:id="n6button" layoutX="436.0" layoutY="260.0" mnemonicParsing="false" onAction="#meter6" prefHeight="74.0" prefWidth="70.0" text="6" />
+      <Button fx:id="n4button" layoutX="296.0" layoutY="260.0" mnemonicParsing="false" onAction="#meter4" prefHeight="74.0" prefWidth="70.0" text="4" />
+      <Button fx:id="sumarButton" layoutX="506.0" layoutY="186.0" mnemonicParsing="false" onAction="#suma" prefHeight="148.0" prefWidth="70.0" text="+" />
+      <Button fx:id="n2button" layoutX="366.0" layoutY="334.0" mnemonicParsing="false" onAction="#meter2" prefHeight="74.0" prefWidth="70.0" text="2" />
+      <Button fx:id="n3button" layoutX="436.0" layoutY="334.0" mnemonicParsing="false" onAction="#meter3" prefHeight="74.0" prefWidth="70.0" text="3" />
+      <Button fx:id="n1button" layoutX="296.0" layoutY="334.0" mnemonicParsing="false" onAction="#meter1" prefHeight="74.0" prefWidth="70.0" text="1" />
+      <Button fx:id="enterButton" layoutX="506.0" layoutY="334.0" mnemonicParsing="false" onAction="#enter" prefHeight="148.0" prefWidth="70.0" text="Enter" />
+      <Button fx:id="puntoButton" layoutX="436.0" layoutY="408.0" mnemonicParsing="false" onAction="#punto" prefHeight="74.0" prefWidth="70.0" text="." />
+      <Button fx:id="n0button" layoutX="296.0" layoutY="408.0" mnemonicParsing="false" onAction="#meter0" prefHeight="74.0" prefWidth="140.0" text="0" />
+      <Button fx:id="dividirButton" layoutX="366.0" layoutY="112.0" mnemonicParsing="false" onAction="#div" prefHeight="74.0" prefWidth="70.0" text="/" />
+      <Button fx:id="multiplicarButton" layoutX="436.0" layoutY="112.0" mnemonicParsing="false" onAction="#mult" prefHeight="74.0" prefWidth="70.0" text="*" />
+      <Button fx:id="cambiarPosNegButton" layoutX="296.0" layoutY="112.0" mnemonicParsing="false" onAction="#cambiarSimbolo" prefHeight="74.0" prefWidth="70.0" text="+/-" />
+      <Button fx:id="restarButton" layoutX="506.0" layoutY="112.0" mnemonicParsing="false" onAction="#resta" prefHeight="74.0" prefWidth="70.0" text="-" />
+      <Label layoutX="168.0" layoutY="23.0" text="RPN Strikes back">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff21be" height="325.0" layoutX="24.0" layoutY="112.0" stroke="BLACK" strokeType="INSIDE" width="237.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff21be" height="65.0" layoutX="24.0" layoutY="434.0" stroke="BLACK" strokeType="INSIDE" width="237.0" />
+      <VBox alignment="BOTTOM_LEFT" layoutX="32.0" layoutY="120.0" prefHeight="275.0" prefWidth="221.0">
+         <children>
+            <Label fx:id="fila9" alignment="TOP_RIGHT" contentDisplay="BOTTOM" prefHeight="16.0" prefWidth="228.0" text="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="fila8" alignment="TOP_RIGHT" contentDisplay="BOTTOM" prefHeight="16.0" prefWidth="228.0" text="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="fila7" alignment="TOP_RIGHT" contentDisplay="BOTTOM" prefHeight="16.0" prefWidth="228.0" text="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="fila6" alignment="TOP_RIGHT" contentDisplay="BOTTOM" prefHeight="16.0" prefWidth="228.0" text="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="fila5" alignment="TOP_RIGHT" contentDisplay="BOTTOM" prefHeight="16.0" prefWidth="228.0" text="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="fila4" alignment="TOP_RIGHT" contentDisplay="BOTTOM" prefHeight="16.0" prefWidth="228.0" text="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="fila3" alignment="TOP_RIGHT" contentDisplay="BOTTOM" prefHeight="16.0" prefWidth="228.0" text="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="fila2" alignment="TOP_RIGHT" contentDisplay="BOTTOM" prefHeight="16.0" prefWidth="228.0" text="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="fila1" alignment="TOP_RIGHT" contentDisplay="BOTTOM" prefHeight="16.0" prefWidth="228.0" text="0.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="numeroActual" alignment="CENTER_RIGHT" layoutX="32.0" layoutY="449.0" prefHeight="30.0" prefWidth="221.0" text="">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="puntoButton1" layoutX="296.0" layoutY="499.0" mnemonicParsing="false" onAction="#delete" prefHeight="74.0" prefWidth="70.0" text="Del" />
+   </children>
+</Pane>
