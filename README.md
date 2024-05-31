@@ -1,1 +1,1 @@
-[imagen](rpn.png)
+[imagen](RPN.png)
